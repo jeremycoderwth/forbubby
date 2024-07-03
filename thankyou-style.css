@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-fontFamily: "Rubik", sans-serif;
+}
+
+body {
+    background: rgb(206,192,252);
+    background: linear-gradient(0deg, rgba(206,192,252,1) 45%, rgba(253,205,205,1) 55%);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200vh;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 140px;
+    max-height: 160vh;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 960px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 10px;
+    padding: 12px 15px;
+}
+
+.contents-col {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1.7rem 0.8rem;
+}
+
+.heading-container {
+    font-family: var(--primary-fontFamily);
+}
+
+.content-body {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.message {
+    font-family: var(--primary-fontFamily);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 0.8rem;
+}
+
+.message p {
+    font-family: inherit;
+    font-size: 1.160em;
+    line-height: 25px;
+    padding: 0.8rem 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.rewardBtn-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1.2rem 0.8rem;
+}
+
+.rewards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rewards {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    padding: 1rem 0.8rem;
+}
+
+.secondaryBtn {
+    background: linear-gradient(to bottom right, #ef4765, #ff9a5a);
+    border: 0;
+    border-radius: 20px;
+    color: white;
+    font-family: inherit;
+    font-size: 1.1em;
+    font-weight: 500;
+    outline: transparent;
+    padding: 0 1.2rem;
+    transition: box-shadow 0.2s ease-in-out;
+    touch-action: manipulation;
+    text-align: center;
+    line-height: 2.5;
+}
+
+.secondaryBtn:not([disabled]):focus {
+    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5), 0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.secondaryBtn:not([disabled]):hover {
+    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5), 0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.reward-video {
+    height: 500px;
+    width: 400px;
+}
+
+#dialogBox {
+    width: 120px;
+    margin-top: 3.5rem;
+}
+
+#rose {
+    width: 110px;
+    margin-top: 3.5rem;
+}
+
+.images {
+    padding: 0 0.8rem;
+}
+
+.shortMsg-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: .8rem;
+    padding: 0.8rem;
+}
+
+.ps {
+    font-family: var(--primary-fontFamily);
+    font-size: 1.1em;
+}

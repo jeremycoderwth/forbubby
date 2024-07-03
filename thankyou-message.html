@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You Message | Jeremy Randel</title>
+    <link rel="stylesheet" href="thankyou-style.css">
+</head>
+<body>
+    
+    <div class="main-wrapper">
+        <div class="main-container">
+            <div class="heading-container">
+                <h1>Thank You, Bubbab!</h1>
+            </div>
+            <div class="contents-col">
+                <div class="images-container-left col">
+                    <div class="images">
+                        <img src="assets/dialog-box-svgrepo-com.svg" alt="dialog-heart-boxes" id="dialogBox">
+                    </div>
+                </div>
+                <div class="content-body">
+                    <div class="message">
+                        <p>Dahil you've clicked the button, that means you're agree that we'll play later. And since you're a very good girl and u read carefully, I have a reward for u 😊</p>
+                        <div class="rewardBtn-cont">
+                            <button type="button" class="secondaryBtn" id="rewardBtn" title="Open it!">Click me!</button>
+                        </div>
+                    </div>
+                    <div class="rewards-container">
+                        <div class="rewards" id="vidContainer" style="display: none;">
+                            <video src="assets/reward-for-my-baby.mp4" controls class="reward-video" id="reward"></video>
+                            <div class="shortMsg-container">
+                                <p class="ps">Watch this video, bub, it's for u 🫶</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="images-container-right col">
+                    <div class="images">
+                        <img src="assets/roses-svgrepo-com.svg" alt="rose" id="rose">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('rewardBtn').onclick = function () {
+            const vidContainer = document.getElementById('vidContainer');
+
+            if (vidContainer.style.display === "none") {
+                vidContainer.style.display = "block";
+            } else {
+                vidContainer.style.display = "none";
+            }
+        };
+    </script>
+</body>
+</html>
